@@ -1,0 +1,7 @@
+<p>This is the TeamView view.</p>
+<h3 ui-sref="main"> Home </h3>
+<div ui-view></div>
+<div ng-repeat="character in team">
+<a ui-sref="character({CharID: char.id})">{{character.name}}</a>
+</div>
+<!-- <a ui-sref="character({CharId: char.id})">{{team.character.id}}</a> -->
