@@ -41,7 +41,6 @@ app.config(function($stateProvider, $urlRouterProvider){
 		controller:'CharCtrl',
 		resolve:{
 			character: function($stateParams,turtleService){
-				//debugger
 				return turtleService.getCharacter($stateParams.charId);
 			}
 		}
