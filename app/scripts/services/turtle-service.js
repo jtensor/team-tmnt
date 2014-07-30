@@ -36,7 +36,7 @@ angular.module('tmntApp')
     		method:'GET',
     		url:'http://tmnt.devmounta.in/character/'+charId,
     	}).success(function(data){
-    		console.log('hii');
+    		//console.log('hii');
     		console.log(data.id);
     		deferred.resolve(data.id);
     	});
