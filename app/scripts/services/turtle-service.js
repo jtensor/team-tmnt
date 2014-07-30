@@ -37,7 +37,7 @@ angular.module('tmntApp')
     		url:'http://tmnt.devmounta.in/character/'+charId,
     	}).success(function(data){
     		//console.log('hii');
-    		console.log(data.id);
+    		//console.log(data.id);
     		deferred.resolve(data.id);
     	});
     	return deferred.promise;
